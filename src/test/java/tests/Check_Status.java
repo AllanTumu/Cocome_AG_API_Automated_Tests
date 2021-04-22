@@ -17,7 +17,7 @@ public class Check_Status {
 		//GET
 		given().
 			get("posts").
-				then().statusCode(200);
+		then().statusCode(200);
 	}
 
 }
