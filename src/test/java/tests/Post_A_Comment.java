@@ -9,6 +9,12 @@ import org.testng.annotations.Test;
 
 import io.restassured.http.ContentType;
 
+/**
+ * Create a post with 1 comment as the above user. Check the comment persists and is related with the correct user.
+ * @author Allan Tumuhimbise
+ *
+ */
+
 public class Post_A_Comment {
 	
 	@Test
