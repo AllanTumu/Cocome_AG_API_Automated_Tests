@@ -24,7 +24,7 @@ public class Rename_User {
 		JSONObject request = new JSONObject();
 		
 		request.put("name", "Allan Tumuhimbise");
-		request.put("email", "allan6@cocomoreag.io");
+		request.put("email", "allan7@cocomoreag.io");
 		request.put("gender", "Male");
 		request.put("status", "Active");
 		
@@ -39,12 +39,12 @@ public class Rename_User {
 			body(request.toJSONString()).
 			
 		when().
-			patch("users/8").
+			patch("users/24").
 		then().
 			assertThat().
 			statusCode(200).
 			log().all().
-			body("data.email", Matchers.is("allan6@cocomoreag.io"));
+			body("data.email", Matchers.is("allan7@cocomoreag.io"));
 	}
 
 }
